@@ -11,15 +11,23 @@ The producer program follows these steps:
 1. Initialize semaphores
 
 2. Setup shared memory, which consists of 4 subtasks:
+
   a. Create shared memory object
+
   b. Set the size of the shared memory
+
   c. Map the shared memory
+
   d. Initialize the buffer
 
 3. Execution of the producer function
+
   a. Check if space is available
+
   b. Ensure mutual exclusion
+
   c. Produce
+
   d. Signal to the consumer
 
 4. Clean
